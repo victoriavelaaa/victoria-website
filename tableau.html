@@ -1,0 +1,122 @@
+<body>
+    <div class="custom-nav">
+        <!-- Navigation links to all pages -->
+        <a href="../index.html">Home</a> |
+        <a href="aboutme.html">About Me</a> |
+        <a href="tableau.html">Tableau</a>
+    </div>
+<!-- Chart 1: Profits by State -->
+<div class='tableauPlaceholder' id='viz1' style='width: 900px; height: 600px;'>
+  <noscript>
+    <a href='#'><img alt='Profits by State' src='https://public.tableau.com/static/images/66/6688MQFHR/1_rss.png' style='border: none' /></a>
+  </noscript>
+  <object class='tableauViz' width='900' height='600' style='display:none;'>
+    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+    <param name='embed_code_version' value='3' />
+    <param name='path' value='shared/6688MQFHR' />
+    <param name='toolbar' value='yes' />
+    <param name='static_image' value='https://public.tableau.com/static/images/66/6688MQFHR/1.png' />
+    <param name='animate_transition' value='yes' />
+    <param name='display_static_image' value='yes' />
+    <param name='display_spinner' value='yes' />
+    <param name='display_overlay' value='yes' />
+    <param name='display_count' value='yes' />
+    <param name='language' value='en-US' />
+  </object>
+</div>
+<div class="caption">Profits are strongest in Utah.</div>
+
+<!-- Chart 2: Monthly Profits for One Top State -->
+<div class='tableauPlaceholder' id='viz2' style='width: 900px; height: 600px;'>
+  <noscript>
+    <a href='#'><img alt='Monthly Profits for One Top State' src='https://public.tableau.com/static/images/My/MyWebsiteTableau2/chart2/1_rss.png' style='border: none' /></a>
+  </noscript>
+  <object class='tableauViz' width='900' height='600' style='display:none;'>
+    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+    <param name='embed_code_version' value='3' />
+    <param name='site_root' value='' />
+    <param name='name' value='MyWebsiteTableau2/chart2' />
+    <param name='tabs' value='no' />
+    <param name='toolbar' value='yes' />
+    <param name='static_image' value='https://public.tableau.com/static/images/My/MyWebsiteTableau2/chart2/1.png' />
+    <param name='animate_transition' value='yes' />
+    <param name='display_static_image' value='yes' />
+    <param name='display_spinner' value='yes' />
+    <param name='display_overlay' value='yes' />
+    <param name='display_count' value='yes' />
+    <param name='language' value='en-US' />
+  </object>
+</div>
+<div class="caption">California’s profits rose steadily with mid-year peaks.</div>
+
+<!-- Chart 3: Profits by Product Category in California -->
+<div class='tableauPlaceholder' id='viz3' style='width: 900px; height: 600px;'>
+  <noscript>
+    <a href='#'><img alt='Profits by Product Category in California' src='https://public.tableau.com/static/images/My/MyWebsiteTableau3/chart3/1_rss.png' style='border: none' /></a>
+  </noscript>
+  <object class='tableauViz' width='900' height='600' style='display:none;'>
+    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+    <param name='embed_code_version' value='3' />
+    <param name='site_root' value='' />
+    <param name='name' value='MyWebsiteTableau3/chart3' />
+    <param name='tabs' value='no' />
+    <param name='toolbar' value='yes' />
+    <param name='static_image' value='https://public.tableau.com/static/images/My/MyWebsiteTableau3/chart3/1.png' />
+    <param name='animate_transition' value='yes' />
+    <param name='display_static_image' value='yes' />
+    <param name='display_spinner' value='yes' />
+    <param name='display_overlay' value='yes' />
+    <param name='display_count' value='yes' />
+    <param name='language' value='en-US' />
+  </object>
+</div>
+<div class="caption">Technology is the most profitable category in California.</div>
+
+<!-- Chart 4: Forecast Sales for Top Category -->
+<div class='tableauPlaceholder' id='viz4' style='width: 900px; height: 600px;'>
+  <noscript>
+    <a href='#'><img alt='Forecast Sales for Top Category' src='https://public.tableau.com/static/images/My/MyWebsiteTableau_17509878856280/chart4/1_rss.png' style='border: none' /></a>
+  </noscript>
+  <object class='tableauViz' width='900' height='600' style='display:none;'>
+    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+    <param name='embed_code_version' value='3' />
+    <param name='site_root' value='' />
+    <param name='name' value='MyWebsiteTableau_17509878856280/chart4' />
+    <param name='tabs' value='no' />
+    <param name='toolbar' value='yes' />
+    <param name='static_image' value='https://public.tableau.com/static/images/My/MyWebsiteTableau_17509878856280/chart4/1.png' />
+    <param name='animate_transition' value='yes' />
+    <param name='display_static_image' value='yes' />
+    <param name='display_spinner' value='yes' />
+    <param name='display_overlay' value='yes' />
+    <param name='display_count' value='yes' />
+    <param name='language' value='en-US' />
+  </object>
+</div>
+<div class="caption">Sales in California’s technology category are forecasted to grow through November 2015.</div>
+
+
+<script type='text/javascript'>
+  const ids = ['viz1', 'viz2', 'viz3', 'viz4'];
+  ids.forEach(function (id) {
+    const divElement = document.getElementById(id);
+    const vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    const scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  });
+</script>
+
+ 
+ <footer class="border-top">
+                 <div class="small text-center text-muted fst-italic">Copyright &copy; Victoria Velazquez 2025</div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
